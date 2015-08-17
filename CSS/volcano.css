@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document 
+For Volcano Project
+By Jay Manalansan
+*/
+* {
+	margin: 0;
+	padding: 0;	
+}
+
+@font-face {
+	font-family: Enigma__2;
+	src: url('../Fonts/Enigma__2-webfont.ttf');	
+}
+
+body {
+	background:url(../Images/headerbg.png)top left repeat-x;
+	background-position: 0px 0px;
+	background-color: #5d2f0e;
+	font-family: Verdana, Geneva, sans-serif;
+	color:#f1c6ac;
+}
+
+#container {
+	/*background:url(../Images/headerbg.png) top left repeat-x;*/
+	width: 1020px;
+	margin: 0 auto;
+}
+
+#logo {
+	margin: 100px 0px 0px 120px;	
+}
+#volcano {
+	margin: -172px 0px 0px 490px;	
+}
+
+#nav li {
+	/*display:inline;*/
+	padding-left: 20px;	
+	font-size: 22px;
+	font: Enigma__2;
+	color:#f1c6ac;
+	
+}
+#nav {
+	width: 960x;	
+}
+ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+li {
+	float:left;
+	width:180px;
+	height: 22px;
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+li a {
+	display:block;
+	padding:16px 0px;
+	height:100%;
+	color:#FFF;
+	text-decoration:none;
+	
+}
+li a {
+	background:url(../Images/bg3.jpg) repeat 0 0;
+	color:#f1c6ac;
+}
+li a:hover {
+	background-position:50px 0;
+	color:#fff;
+}
+#content {
+	margin-top:57px; 	
+	letter-spacing: 0.1px;
+}
+
+h2 {
+	margin-left:280px; 	
+}
+p {
+	margin-top: 5px;
+	margin-left: 280px;
+	width: 460px;
+	padding-top: 15px;
+}
+
+.definition2 {
+	position:absolute;
+	top: 430px;
+	left: 110px;
+	width: 200px;
+	padding: 5px;
+	font-size: 20px;
+	background-color:#a36227;
+	/*margin: 20px 23px 10px 10px;*/
+	margin-left: 40px;
+	font-style: italic;
+	color: #fff;
+	bor
+}
+.definition {
+	position:absolute;
+	top: 430px;
+	left: 855px;
+	width: 200px;
+	padding: 5px;
+	font-size: 20px;
+	background-color:#a36227;
+	/*margin: 20px 23px 10px 10px;*/
+	margin-left: 0px;
+	font-style: italic;
+	color: #fff;
+	bor
+}
+.pq, .pq2 {
+	color:#ed1c24;
+}

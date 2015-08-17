@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="JS/jquery-1.6.2.min.js" /></script>
+<script type="text/javascript" src="JS/jquery.backgroundPosition.js" /></script>
+<link rel="stylesheet" type="text/css" href="css/volcano.css" />
+<title>Volcano</title>
+<script type="text/javascript">
+$(document).ready(function( ) {
+
+$('#nav a')
+	.css( {backgroundPosition: "0 -231px"} )
+	.mouseover(function(){
+		$(this).stop().animate(
+			{backgroundPosition:"(0px 0px)"}, 
+			{duration:2200})
+		})
+	.mouseout(function(){
+		$(this).stop().animate(
+			{backgroundPosition:"(0 -231)"}, 
+			{duration:1500})
+		})
+$('.definition').hide();
+$('span.pq').toggle( 
+	function(){
+		$('.definition').show();
+	},
+	function(){
+		$('.defintion').hide();
+	}
+	);
+$('.definition2').hide();
+$('span.pq2').toggle( 
+	function(){
+		$('.definition2').show();
+	},
+	function(){
+		$('.defintion2').hide();
+	}
+	);
+		
+});
+</script> 
+
+
+
+</head>
+
+<body>
+<div id="container">
+    
+   	<img id="logo" src="images/logo.png" />
+    <div id="header">
+    <img id="volcano" src="images/volcano.png" />
+    </div><!-- end of header div -->
+    <div id="nav">
+    <ul>
+    	<li><a href="index.html">Volcano</a></li>
+    	<li><a href="how.html">How They Work</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="classification.html">Classification</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+    
+    </div><!-- end of nav div -->
+    <div id="content">
+    <h2>How They Work</h2>
+    <p>A volcano is an opening, or rupture, in a planet's surface or crust, which allows hot <span class="pq">magma</span>, volcanic ash and gases to escape from below the surface. By contrast, volcanoes are usually not created where two <span class="pq2">tectonic plates</span> slide past one another. </p>
+    
+    
+    <p>Volcanoes can also form where there is stretching and thinning of the Earth's crust in the interiors of plates, e.g., in the East African Rift, the Wells Gray-Clearwater volcanic field and the Rio Grande Rift in North America. This type of volcanism falls under the umbrella of "Plate hypothesis" volcanism.
+</p>
+	<p>Intraplate volcanism has also been postulated to be caused by mantle plumes. These so-called "hotspots", for example Hawaii, are postulated to arise from upwelling diapirs from the core-mantle boundary, 3,000 km deep in the Earth.</p>
+    <p class="definition">Magma- Hot fluid or semifluid material below or within the earth's crust from which lava and other igneous rock is formed by cooling.</p>
+    <p class="definition2">Tectonic Plates- 	the two sub-layers of the earth's crust (lithosphere) that move, float, and sometimes fracture and whose interaction causes continental drift, earthquakes, volcanoes, mountains, and oceanic trenches.</p>
+    
+    </div><!-- end of content div -->
+
+
+</div><!-- end of container div -->
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="JS/jquery-1.6.2.min.js" /></script>
+<script type="text/javascript" src="JS/jquery.backgroundPosition.js" /></script>
+<script type="text/javascript" src="JS/jquery.lightbox.js"></script>
+<link rel="stylesheet" type="text/css" href="css/volcano.css" />
+<title>Volcano</title>
+<script type="text/javascript">
+$(document).ready(function( ) {
+
+$('#nav a')
+	.css( {backgroundPosition: "0 -231px"} )
+	.mouseover(function(){
+		$(this).stop().animate(
+			{backgroundPosition:"(0px 0px)"}, 
+			{duration:2200})
+		})
+	.mouseout(function(){
+		$(this).stop().animate(
+			{backgroundPosition:"(0 -231)"}, 
+			{duration:1500})
+		})
+		
+});
+
+</script> 
+
+
+
+</head>
+
+<body>
+<div id="container">
+    
+   	<img id="logo" src="images/logo.png" />
+    <div id="header">
+    <img id="volcano" src="images/volcano.png" />
+    </div><!-- end of header div -->
+    <div id="nav">
+    <ul>
+    	<li><a href="index.html">Volcano</a></li>
+    	<li><a href="how.html">How They Work</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="classification.html">Classification</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+    
+    </div><!-- end of nav div -->
+    <div id="content">
+    <h2>Volcano Gallery</h2>
+    <div id="images">
+    	<div>
+    		
+            <div id="gallery">
+              <a href="images/large/one.jpg" title="'Rinjani eruption in 1994, in Lombok Indonesia'  Photographed by Oliver Spalt"><img src="images/small/one.jpg" width="90" height="90" alt="Rinjani" border= "0" ></a>
+             
+              <a href="images/large/two.jpg" title="'Three Waikupanaha and one Ki lava ocean entries and lava flow at The Big Island of Hawaii' Photographed by Mila Zinkova"> <img src="images/small/two.jpg" width="90" height="90" alt="Waikupanaha"  border= "0"> </a>
+             
+              <a href="images/large/three.jpg" title="'Pahoehoe Lava flow at The Big Island of Hawaii' Photographed by Mila Zinkova"><img src="images/small/three.jpg" width="90" height="90" alt="Pahoehoe"  border= "0"> </a>
+             
+              <a href="images/large/four.jpg" title="'Lakagigar, Iceland' Photographed by Juhasz Peter"><img src="images/small/four.jpg" width="90" height="90" alt="Lakagigar" border= "0"> </a>
+             
+              <a href="images/large/five.jpg" title="'Rainbow and sulfur dioxide emissions from the Halemaumau vent in Kilauea,Hawaii' Photographed by Mila Zinkova"><img src="images/small/five.jpg" width="90" height="90" alt="Halemaumau"  border= "0"> </a>
+             
+              <a href="images/large/six.jpg" title="'Chaiten Volcan Eruption, Southern Chile in 2009' Photographed by Sam Beebe"><img src="images/small/six.jpg" width="90" height="90" alt="Chaiten"  border= "0"></a>
+              </div>
+    	</div>
+    </div>
+    </div><!-- end of content div -->
+
+
+</div><!-- end of container div -->
+</body>
+</html>

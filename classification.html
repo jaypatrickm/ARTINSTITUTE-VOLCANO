@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="JS/jquery-1.6.2.min.js" /></script>
+<script type="text/javascript" src="JS/jquery.backgroundPosition.js" /></script>
+<link rel="stylesheet" type="text/css" href="css/volcano.css" />
+<title>Volcano</title>
+<script type="text/javascript">
+$(document).ready(function( ) {
+
+$('#nav a')
+	.css( {backgroundPosition: "0 -231px"} )
+	.mouseover(function(){
+		$(this).stop().animate(
+			{backgroundPosition:"(0px 0px)"}, 
+			{duration:2200})
+		})
+	.mouseout(function(){
+		$(this).stop().animate(
+			{backgroundPosition:"(0 -231)"}, 
+			{duration:1500})
+		})
+		
+});
+</script> 
+
+
+
+</head>
+
+<body>
+<div id="container">
+    
+   	<img id="logo" src="images/logo.png" />
+    <div id="header">
+    <img id="volcano" src="images/volcano.png" />
+    </div><!-- end of header div -->
+    <div id="nav">
+    <ul>
+    	<li><a href="index.html">Volcano</a></li>
+    	<li><a href="how.html">How They Work</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="classification.html">Classification</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+    
+    </div><!-- end of nav div -->
+    <div id="content">
+    <h2>Classification</h2>
+    <p>Active</p>
+    <p>A popular way of classifying magmatic volcanoes is by their frequency of eruption, with those that erupt regularly called active, those that have erupted in historical times but are now quiet called dormant, and those that have not erupted in historical times called extinct. However, these popular classifications—extinct in particular—are practically meaningless to scientists. They use classifications which refer to a particular volcano's formative and eruptive processes and resulting shapes, which was explained above.</p>
+	<p>There is no real consensus among volcanologists on how to define an "active" volcano. The lifespan of a volcano can vary from months to several million years, making such a distinction sometimes meaningless when compared to the lifespans of humans or even civilizations. For example, many of Earth's volcanoes have erupted dozens of times in the past few thousand years but are not currently showing signs of eruption. Given the long lifespan of such volcanoes, they are very active. By human lifespans, however, they are not.</p>
+    <p>Extinct</p>
+    <p>Dormant</p>
+    
+    </div><!-- end of content div -->
+
+
+</div><!-- end of container div -->
+</body>
+</html>

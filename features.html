@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="JS/jquery-1.6.2.min.js" /></script>
+<script type="text/javascript" src="JS/jquery.backgroundPosition.js" /></script>
+<link rel="stylesheet" type="text/css" href="css/volcano.css" />
+<title>Volcano</title>
+<script type="text/javascript">
+$(document).ready(function( ) {
+
+$('#nav a')
+	.css( {backgroundPosition: "0 -231px"} )
+	.mouseover(function(){
+		$(this).stop().animate(
+			{backgroundPosition:"(0px 0px)"}, 
+			{duration:2200})
+		})
+	.mouseout(function(){
+		$(this).stop().animate(
+			{backgroundPosition:"(0 -231)"}, 
+			{duration:1500})
+		})
+		
+});
+</script> 
+
+
+
+</head>
+
+<body>
+<div id="container">
+    
+   	<img id="logo" src="images/logo.png" />
+    <div id="header">
+    <img id="volcano" src="images/volcano.png" />
+    </div><!-- end of header div -->
+    <div id="nav">
+    <ul>
+    	<li><a href="index.html">Volcano</a></li>
+    	<li><a href="how.html">How They Work</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="classification.html">Classification</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+    
+    </div><!-- end of nav div -->
+    <div id="content">
+    <h2>Features</h2>
+    <p>The most common perception of a volcano is of a conical mountain, spewing lava and poisonous gases from a crater at its summit. This describes just one of many types of volcano, and the features of volcanoes are much more complicated. The structure and behavior of volcanoes depends on a number of factors. Some volcanoes have rugged peaks formed by lava domes rather than a summit crater, whereas others present landscape features such as massive plateaus. Vents that issue volcanic material (lava, which is what magma is called once it has escaped to the surface, and ash) and gases (mainly steam and magmatic gases) can be located anywhere on the landform.</p>
+    <p>Other types of volcano include cryovolcanoes (or ice volcanoes), particularly on some moons of Jupiter, Saturn and Neptune; and mud volcanoes, which are formations often not associated with known magmatic activity. Active mud volcanoes tend to involve temperatures much lower than those of igneous volcanoes, except when a mud volcano is actually a vent of an igneous volcano.</p>
+	<p>Fissure vents
+     
+     Volcanic fissure vents are flat, linear
+     cracks through which lava emerges.
+
+Shield Volcanoes
+Lava domes
+Cryptodomes
+Volcanic cones
+Stratovolcanoes 
+Supervolcanoes
+Submarine volcanoes
+Subglacial volcanoes</p>
+    
+    </div><!-- end of content div -->
+
+
+</div><!-- end of container div -->
+</body>
+</html>
